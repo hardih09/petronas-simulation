@@ -1,0 +1,191 @@
+p, div, section, button, span, li, input, textarea, option {
+    font-family: 'Museo Sans';
+    margin: 0;
+}
+
+input, select {
+    border: none;
+    box-shadow: -3px 4px 11px -3px #cacaca;
+    font-size: 12px;
+    padding: 8px 0px;
+    height: 32px;
+    min-width: 140px;
+    outline: none;
+}
+
+.frame-header {
+    background-color: #00A19C;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.frame-header .this-row {
+    height: 100%;
+}
+
+.frame-header .this-row[num="1"] {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.frame-header .this-row[num="2"] {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 12px;
+}
+
+.frame-header .this-row[num="2"] .avatar {
+    background-image: url('../images/avatar-sample.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.frame-header .this-row[num="2"] .username {
+    font-size: 11px;
+    color: #ffffff;
+}
+
+.frame-header .this-row[num="3"] {
+    width: 7%;
+    position: relative;
+}
+
+.frame-header .this-row[num="3"] .company-logo{
+    background-image: url('../images/logo-petronas-02.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px 0px #929292;
+}
+
+.frame-content {
+    background-color: #F8F9FD;
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 30px 20px 70px;
+}
+
+.frame-content .sec-box {
+    box-shadow: -3px 4px 9px -3px #cacaca;
+    min-width: 100%;
+    min-height: 20vh;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.frame-content .sec-box .title {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.frame-content .sec-box .filter-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin: 15px 0px;
+}
+
+.frame-content .sec-box .filter-row div[for=day] {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.frame-content .sec-box .filter-row div[for=box] {
+    font-size: 11px;
+    box-shadow: -2px 2px 6px -2px #cacaca;
+    min-width: 30px;
+    min-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.frame-content .sec-box .filter-row div[for=box].active {
+    background-color: #00A19C;
+    color: #ffffff;
+}
+
+.frame-content .sec-box .filter-row .calendar-input {
+    font-size: 12px;
+    height: 28px;
+    width: 100px;
+}
+
+.frame-content .sec-box .filter-row .form-row {
+    margin: 0px 12px;
+}
+
+.frame-content .sec-box p[for=graph-title] {
+    font-size: 12px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.frame-content .sec-box div[for=graph-box] {
+    box-shadow: 0px 0px 6px -1px #cacaca;
+    width: 165px;
+    min-height: 100px;
+    margin-top: 12px;
+    padding: 14px;
+}
+
+.frame-content .sec-box .graph-summary-sect {
+    font-size: 12px;
+    border-bottom: solid 1px #dfdfdf;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.frame-content .sec-box .graph-summary-sect p[for=title] {
+    color: #00A19C;
+}
+
+.frame-content .sec-box .graph-summary-sect span[for=number] {
+    font-size: 16px;
+}
+
+.frame-content .sec-box .graph-summary-sect i[for=legend] {
+    font-size: 16px;
+}
+
+.frame-content .sec-box div[for=graph-box] .graph-summary-sect:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.frame-sidebar {
+    background-color: #00A19C;
+    position: fixed;
+    width: 40px;
+    height: 100%;
+    top: 70px;
+    border-radius: 0px 5px 0px 0px;
+    padding: 15px 0px;
+}
+
+.frame-sidebar .menu-item {
+    color: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}

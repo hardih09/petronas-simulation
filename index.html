@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Petronas Simulator</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/fonts/fonts.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/highcharts/highcharts.js"></script>
+        <script src="node_modules/highcharts/modules/exporting.js"></script>
+        <script src="node_modules/highcharts/modules/export-data.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <section class="frame-header">
+            <div class="this-row" num="1">
+                <p><i class="fa fa-bars" style="margin-right: 8px;"></i> VISUALIGN</p>
+            </div>
+            <div class="this-row" num="2">
+                <p class="username">Abd Rizal <i class="fa fa-chevron-down" style="font-size: 9px;padding: 0px 7px;"></i></p>
+                <div class="avatar"></div>
+            </div>
+            <div class="this-row" num="3">
+                <div class="company-logo"></div>
+            </div>
+        </section>
+        <section class="frame-content">
+            <div class="sec-box">
+                <p class="title">PARAMETRS</p>
+                <select name="" id="" style="color: #00A19C;">
+                    <option value="">Gas Flow</option>
+                </select>
+                <div class="filter-row">
+                    <div for="day">
+                        <div for="box">1W</div>
+                        <div for="box">1M</div>
+                        <div for="box">3M</div>
+                        <div for="box">1Y</div>
+                        <div for="box">YTD</div>
+                        <div class="active" for="box">All</div>
+                    </div>
+                    <p>From</p>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" class="form-control calendar-input" value="02 Dec 2017" aria-describedby="calendar1" required>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="calendar1"><i class="fa fa-calendar" style="font-size: 12px;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>To</p>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" class="form-control calendar-input" value="02 Nov 2018" aria-describedby="calendar2" required>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="calendar2"><i class="fa fa-calendar" style="font-size: 12px;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <p for="graph-title">Supplier: Total Nomination and Actual Gas Flow (MMscf/d)</p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div id="graphPie1" style="min-width: 200px; height: 200px; max-width: 600px; margin: 0 auto"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div for="graph-box">
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Total Nomination</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #dfdfdf;"></i> 620.9</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Actual Gas Flow</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #EFAA23;"></i> 500.9</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Difference</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #ffffff;"></i> -100.0</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p for="graph-title">Customer: Total Nomination and Actual Gas Flow(MMscf/d)</p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div id="graphPie2" style="min-width: 200px; height: 200px; max-width: 600px; margin: 0 auto"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div for="graph-box">
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Total Nomination</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #dfdfdf;"></i> 760.2</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Actual Gas Flow</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #EFAA23;"></i> 700.2</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                    <div class="graph-summary-sect">
+                                        <p for="title">Difference</p>
+                                        <p><span for="number"><i class="fa fa-square" for="legend" style="color: #ffffff;"></i> -60.2</span> <span style="font-size: 9px;color: #888888;">MMscf/d</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="frame-sidebar">
+            <div class="menu-item"><i class="fa fa-tachometer"></i></div>
+            <div class="menu-item"><i class="fa fa-sliders"></i></div>
+            <div class="menu-item"><i class="fa fa-pie-chart"></i></div>
+        </section>
+    </body>
+</html>
