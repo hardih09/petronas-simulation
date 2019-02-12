@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function initIndex () {
+    alert('test');
     graphPie1();
     graphPie2();
 }
