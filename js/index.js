@@ -1,9 +1,26 @@
 $(document).ready(function () {
     initIndex();
+
+    $('.calendar-input[for="dateFrom"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10)
+    }, function(start, end, label) {
+        var years = moment().diff(start, 'years');
+    });
+
+    $('.calendar-input[for="dateTo"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10)
+    }, function(start, end, label) {
+        var years = moment().diff(start, 'years');
+    });
 });
 
 function initIndex () {
-    alert('test');
     graphPie1();
     graphPie2();
 }
